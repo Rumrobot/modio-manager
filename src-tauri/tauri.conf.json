@@ -1,7 +1,7 @@
 {
   "$schema": "../node_modules/@tauri-apps/cli/schema.json",
   "build": {
-    "beforeBuildCommand": "bun svelte:build",
+    "beforeBuildCommand": "run-s python:build svelte:build",
     "beforeDevCommand": {
       "script": "run-s python:build svelte:dev"
     },
@@ -37,7 +37,7 @@
     "bundle": {
       "active": true,
       "targets": "all",
-      "identifier": "com.tauri.dev",
+      "identifier": "dk.rumrobot.modio-manager",
       "externalBin": ["bin/python/test"],
       "icon": [
         "icons/32x32.png",
