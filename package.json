@@ -1,6 +1,6 @@
 {
   "name": "modio-manager",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "python:build": "pyinstaller -F python/test.py --distpath src-tauri/bin/python --clean -n test-x86_64-pc-windows-msvc",
